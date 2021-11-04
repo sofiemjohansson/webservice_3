@@ -1,0 +1,16 @@
+app:
+  jwt:
+    expiry: 604800000
+    secret: r"!z%C*F-JaNcRfUjXn2r5u8x/A?D(G+KbPeSgVkYp3s6v9y$B&E)H@McQfTjWnZq4"
+server:
+  error:
+    include-stacktrace: never
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  profiles:
+    active: prod
